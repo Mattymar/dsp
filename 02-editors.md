@@ -89,8 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> PyCharm. I've used it a bit in the past. I like that everything is together in one place. I like being able to run and debug the code witin the editor. I like the code completion and git integration.
-
-I'm still learning the shortcuts but frequently use ctrl-shift-r to run the code and cmd-/ to comment out a line of code. I'm toying with the idea of using emacs keymap, or perhaps creating a custom keymap that's a hybrid of pycharm and emacs. There's a lot of customization possible, including keymaps, themes, code completion options, etc. all editable within the preferences menu.
+>> PyCharm. I've used it a bit in the past. I like that everything is together in one place. I like being able to run and debug the code witin the editor. I like the code completion and git integration. I'm still learning the shortcuts but frequently use ctrl-shift-r to run the code and cmd-/ to comment out a line of code. I'm toying with the idea of using emacs keymap, or perhaps creating a custom keymap that's a hybrid of pycharm and emacs. There's a lot of customization possible, including keymaps, themes, code completion options, etc. all editable within the preferences menu.
 
  
