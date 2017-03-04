@@ -19,7 +19,17 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `pwd` - show current working directory path  
+> `mkdir` - create a directory  
+> `rm -r <directory>` - deletes a directory (and all of its contents)  
+> `touch <filename>` - create a file  
+> `rm <filename>` - deletes a file
+> `mv <old_filename> <new_filename>` - rename a file  
+> `ls -a` - list all contents (including hidden files and directories)
+> `cp <file to copy> <directory to copy to>` - copy a file from one directory to another  
+> `cat <filename>` - outputs the contents of a file to the terminal  
+> `grep <regex> <filename>` - "global regular expression", searches file for lines that match pattern and returns results
+
 
 ---
 
@@ -34,7 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` - List files and directories in working directory  
+> `ls -a` - List all contents (including hidden files and directories) in working directory   
+> `ls -l` - List all contents of a directory in long format  
+> `ls -lh` - List of contents in long format with human readable file sizes  
+> `ls -lah` - List all contents (including hidden) in long format with human readable file sizes  
+> `ls -t` - Order files and directories by the time they were last modified  
+> `ls -Glp` - Liss files/directories in working directory in long format without group information and append an indicator (/, =, or @) to entries
 
 ---
 
@@ -42,15 +58,22 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > `ls -d` - Displays only directories  
+> `ls -g` - Long format without owner name  
+> `ls -L` - Shows file/directory referenced by a symlink  
+> `ls -og` - Long format without group or owner name  
+> `ls -u` - Displays by file access time
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` is used to apply a command to a series of things. For example, suppose you wanted to remove all files from the current directory that began with the letter "a".  You could run  
+
+`find . -name "a*.txt" | xargs rm`
+
+and that would do it in one fell swoop.
 
  
 
