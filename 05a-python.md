@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> They are both sequences of values that are indexed by integers. The values can be accessed in much the same ways, including slicing. Lists are mutable, while tuples are not. Tuples can set multiple variables simultaneously. 
+>> They are both sequences of values that are indexed by integers. The values can be accessed in much the same ways, including slicing. Lists are mutable, while tuples are not. Tuples can set multiple variables simultaneously.  
 > Tuples can serve as keys in a dictionary, since they are immutable and dictionary keys must be immutable.
 
 ---
@@ -22,9 +22,9 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> Sets can be thought of as lists without any repeating elements. Since all values of a set must be unique, you'll often use a set to ensure you don't have any repeating values in a collection.  For example, if you wanted to find all teams who've won at least one Super Bowl in the last ten years, you might first make a list: 
-> `super_bowl_winners = list('NE', 'DEN', 'NE', 'SEA', 'BAL', 'NYG', 'GB', 'NO', 'PIT', 'NYG')`
-> And use a set to weed out the repeats:
-> `set(super_bowl_winners`
+> `super_bowl_winners = list('NE', 'DEN', 'NE', 'SEA', 'BAL', 'NYG', 'GB', 'NO', 'PIT', 'NYG')`  
+> And use a set to weed out the repeats:  
+> `set(super_bowl_winners`  
 > Sets are faster for lists in finding elements because they can make use of hashing, while lists my search through each element one by one.
 
 ---
@@ -34,9 +34,9 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> The lambda function is used to create an unnamed "throw-away" function. It's used a lot when passing as an argument to another function, when you don't plan on using the function again for anything else.  
-> The sorted() function is a good example, as you'll often need to apply some computation to tell teh function what you want to sort by.
-> `people_ages = [('Smith', 'John', 28), ('Jones', 'Jane', 26), ('Maresca', 'Matt', 33)]
-> sorted(people_ages, key=lambda people: people[2])`
+> The sorted() function is a good example, as you'll often need to apply some computation to tell the function what you want to sort by.  
+> `people_ages = [('Smith', 'John', 28), ('Jones', 'Jane', 26), ('Maresca', 'Matt', 33)]`  
+> `sorted(people_ages, key=lambda people: people[2])`
 
 ---
 
@@ -44,9 +44,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions are a quick way to apply a function to every item in a list in one line. For example:
-> `a = [1, 2, 3, 4, 5, 6]
-> [x % 2 for x in a]`
+>> List comprehensions are a quick way to apply a function to every item in a list in one line. For example:  
+> `a = [1, 2, 3, 4, 5, 6]`  
+> `[x % 2 for x in a]`  
 > This takes a list and sets the value 1 for odd numbers and 0 for even.
 
 ---
