@@ -34,9 +34,12 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> The lambda function is used to create an unnamed "throw-away" function. It's used a lot when passing as an argument to another function, when you don't plan on using the function again for anything else.  
-> The sorted() function is a good example, as you'll often need to apply some computation to tell the function what you want to sort by.  
-> `people_ages = [('Smith', 'John', 28), ('Jones', 'Jane', 26), ('Maresca', 'Matt', 33)]`  
-> `sorted(people_ages, key=lambda people: people[2])`
+>  
+>> The sorted() function is a good example, as you'll often need to apply some computation to tell the function what you want to sort by.  
+> ```  
+> people_ages = [('Smith', 'John', 28), ('Jones', 'Jane', 26), ('Maresca', 'Matt', 33)]  
+> sorted(people_ages, key=lambda people: people[2])  
+> ```
 
 ---
 
@@ -54,11 +57,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 > Or with the filter function:  
 > `print(list(filter(lambda x: x % 2 == 1, a)))`  
 >  
-> The capabilities are similar, though comprehensions tend to be more concise.  Usually, it's a matter of taste.  
+>> The capabilities are similar, though comprehensions tend to be more concise.  Usually, it's a matter of taste.  
 >  
-> Set comprehensions are similar but return only unique values:  
+>> Set comprehensions are similar but return only unique values:  
 > `{x for x in a if x % 2 == 1}`  
-> Dictionary comprehensions provide a similarly easy way to construct a dictionary. Staying with this example, we can build a dictionary with the keys being the items in a list and values being a boolean of whether or not the value is odd.  
+>  
+>> Dictionary comprehensions provide a similarly easy way to construct a dictionary. Staying with this example, we can build a dictionary with the keys being the items in a list and values being a boolean of whether or not the value is odd.  
 > `{x: x % 2 == 1 for x in a}`
 
 ---
