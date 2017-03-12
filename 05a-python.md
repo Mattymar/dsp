@@ -47,7 +47,19 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> List comprehensions are a quick way to apply a function to every item in a list in one line. For example:  
 > `a = [1, 2, 3, 4, 5, 6]`  
 > `[x % 2 for x in a]`  
-> This takes a list and sets the value 1 for odd numbers and 0 for even.
+> This takes a list and sets the value 1 for odd numbers and 0 for even.  With map, the same can be achieved:  
+> `list(map(lambda x: x%2, a))`  
+> Another use of list comprehensions is filtering. In this example we can make a list of only the odd numbers in a:  
+> `print([x for x in a if x % 2 == 1])`  
+> Or with the filter function:  
+> `print(list(filter(lambda x: x % 2 == 1, a)))`  
+>  
+> The capabilities are similar, though comprehensions tend to be more concise.  Usually, it's a matter of taste.  
+>  
+> Set comprehensions are similar but return only unique values:  
+> `{x for x in a if x % 2 == 1}`  
+> Dictionary comprehensions provide a similarly easy way to construct a dictionary. Staying with this example, we can build a dictionary with the keys being the items in a list and values being a boolean of whether or not the value is odd.  
+> `{x: x % 2 == 1 for x in a}`
 
 ---
 
@@ -62,7 +74,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937
 
 b.  
 ```
@@ -70,7 +82,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -78,7 +90,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
