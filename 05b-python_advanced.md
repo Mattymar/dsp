@@ -19,27 +19,23 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> There are 8 different degrees (and one with no degree listed).
-> Degree | Frequency  
-> ------ | ---------  
-> PhD    | 31  
-> ScD    | 6  
-> MS     | 2  
-> MPH    | 2  
-> MD     | 1  
-> JD     | 1  
-> MA     | 1  
-> B.S.Ed.| 1  
+>> There are 8 different degrees (and one with no degree listed).  
+> PhD - 31  
+> ScD - 6  
+> MS - 2  
+> MPH - 2  
+> MD - 1  
+> JD - 1  
+> MA - 1  
+> B.S.Ed. - 1  
 
 
 #### Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> There are 3 titles:
-> Title                 | Frequency  
-> --------------------    ---------  
-> Professor             | 13  
-> Associate Professor   | 12  
-> Assistant Professor   | 12  
+>> There are 3 titles:  
+> Professor - 13  
+> Associate Professor - 12  
+> Assistant Professor - 12  
 
 
 #### Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -82,7 +78,8 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> [('Xie', {'degree': ' PhD', 'title': 'Assistant Professor of Biostatistics', 'email': 'dxie@upenn.edu'}), ('French', {'degree': ' PhD', 'title': 'Associate Professor of Biostatistics', 'email': 'bcfrench@mail.med.upenn.edu'}), ('Joffe', {'degree': ' MD MPH Ph.D', 'title': 'Professor of Biostatistics', 'email': 'mjoffe@mail.med.upenn.edu'})]
+
 
 #### Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -92,11 +89,13 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> [(('Phyllis A.', 'Gimotty'), {'email': 'pgimotty@upenn.edu', 'title': 'Professor of Biostatistics', 'degree': ' Ph.D'}), (('Wei-Ting', 'Hwang'), {'email': 'whwang@mail.med.upenn.edu', 'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.'}), (('Matthew W', 'Bryan'), {'email': 'bryanma@upenn.edu', 'title': 'Assistant Professor of Biostatistics', 'degree': ' PhD'})]
+
 
 #### Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> [(('Scarlett L.', 'Bellamy'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Sc.D.', 'email': 'bellamys@mail.med.upenn.edu'}), (('Warren B.', 'Bilker'), {'title': 'Professor of Biostatistics', 'degree': 'Ph.D.', 'email': 'warren@upenn.edu'}), (('Matthew W', 'Bryan'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' PhD', 'email': 'bryanma@upenn.edu'}), (('Jinbo', 'Chen'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'jinboche@upenn.edu'}), (('Jonas H.', 'Ellenberg'), {'title': 'Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'jellenbe@mail.med.upenn.edu'}), (('Susan S', 'Ellenberg'), {'title': 'Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'sellenbe@upenn.edu'}), (('Rui', 'Feng'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' Ph.D', 'email': 'ruifeng@upenn.edu'}), (('Benjamin C.', 'French'), {'title': 'Associate Professor of Biostatistics', 'degree': ' PhD', 'email': 'bcfrench@mail.med.upenn.edu'}), (('Phyllis A.', 'Gimotty'), {'title': 'Professor of Biostatistics', 'degree': ' Ph.D', 'email': 'pgimotty@upenn.edu'}), (('Wensheng', 'Guo'), {'title': 'Professor of Biostatistics', 'degree': ' Ph.D', 'email': 'wguo@mail.med.upenn.edu'}), (('Yenchih', 'Hsu'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'hsu9@mail.med.upenn.edu'}), (('Rebecca A', 'Hubbard'), {'title': 'Associate Professor of Biostatistics', 'degree': ' PhD', 'email': 'rhubb@mail.med.upenn.edu'}), (('Wei-Ting', 'Hwang'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'whwang@mail.med.upenn.edu'}), (('Marshall M.', 'Joffe'), {'title': 'Professor of Biostatistics', 'degree': ' MD MPH Ph.D', 'email': 'mjoffe@mail.med.upenn.edu'}), (('J. Richard', 'Landis'), {'title': 'Professor of Biostatistics', 'degree': ' B.S.Ed. M.S. Ph.D.', 'email': 'jrlandis@mail.med.upenn.edu'}), (('Mingyao', 'Li'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'mingyao@mail.med.upenn.edu'}), (('Hongzhe', 'Li'), {'title': 'Professor of Biostatistics', 'degree': ' Ph.D', 'email': 'hongzhe@upenn.edu'}), (('Yimei', 'Li'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'liy3@email.chop.edu'}), (('A. Russell', 'Localio'), {'title': 'Associate Professor of Biostatistics', 'degree': ' JD MA MPH MS PhD', 'email': 'rlocalio@upenn.edu'}), (('Nandita', 'Mitra'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'nanditam@mail.med.upenn.edu'}), (('Knashawn H.', 'Morales'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Sc.D.', 'email': 'knashawn@mail.med.upenn.edu'}), (('Kathleen Joy', 'Propert'), {'title': 'Professor of Biostatistics', 'degree': ' Sc.D.', 'email': 'propert@mail.med.upenn.edu'}), (('Mary E.', 'Putt'), {'title': 'Professor of Biostatistics', 'degree': ' PhD ScD', 'email': 'mputt@mail.med.upenn.edu'}), (('Sarah Jane', 'Ratcliffe'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'sratclif@upenn.edu'}), (('Michelle Elana', 'Ross'), {'title': 'Assistant Professor is Biostatistics', 'degree': ' PhD', 'email': 'michross@upenn.edu'}), (('Jason A.', 'Roy'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'jaroy@mail.med.upenn.edu'}), (('Mary D.', 'Sammel'), {'title': 'Professor of Biostatistics', 'degree': ' Sc.D.', 'email': 'msammel@cceb.med.upenn.edu'}), (('Pamela Ann', 'Shaw'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' PhD', 'email': 'shawp@upenn.edu'}), (('Russell Takeshi', 'Shinohara'), {'title': 'Assistant Professor of Biostatistics', 'degree': '0', 'email': 'rshi@mail.med.upenn.edu'}), (('Haochang', 'Shou'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'hshou@mail.med.upenn.edu'}), (('Justine', 'Shults'), {'title': 'Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'jshults@mail.med.upenn.edu'}), (('Alisa Jane', 'Stephens'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'alisaste@mail.med.upenn.edu'}), (('Andrea Beth', 'Troxel'), {'title': 'Professor of Biostatistics', 'degree': ' ScD', 'email': 'atroxel@mail.med.upenn.edu'}), (('Rui', 'Xiao'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' PhD', 'email': 'rxiao@mail.med.upenn.edu'}), (('Sharon Xiangwen', 'Xie'), {'title': 'Associate Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'sxie@mail.med.upenn.edu'}), (('Dawei', 'Xie'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' PhD', 'email': 'dxie@upenn.edu'}), (('Wei (Peter)', 'Yang'), {'title': 'Assistant Professor of Biostatistics', 'degree': ' Ph.D.', 'email': 'weiyang@mail.med.upenn.edu'})]
+
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 

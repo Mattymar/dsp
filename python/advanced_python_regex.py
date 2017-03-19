@@ -1,10 +1,6 @@
 import csv
 import re
 
-# pattern = re.compile(r'associate')
-
-titles_dict = {}
-
 
 def format_degree(degree):
     """Takes degree and returns one string for a number of possible matches"""
@@ -19,6 +15,7 @@ def format_degree(degree):
     else:
         return degree
 
+
 def remove_extra(title):
     """Remove the extra words from title"""
     stop_words = ['is', 'of', 'in', 'biostatistics']
@@ -27,29 +24,34 @@ def remove_extra(title):
     return ' '.join(result_title)
 
 
+# Set up the dictionaries
 degrees_dict = {}
+titles_dict = {}
 
 with open('faculty.csv', 'r') as file:
     reader = csv.reader(file)
-    next(reader) # skip the header
-    #print(re.findall(r'associate', reader))
+    next(reader)  # skip the header
+
+    # Build a dict of faculty members
     faculty_dict = {rows[0]: {'degree': rows[1], 'title': rows[2], 'email': rows[3]} for rows in reader}
     for key in faculty_dict:
-        degrees = faculty_dict[key]['degree']
+        # Format the titles to avoid multiple keys for same title and add to dictionary
         title = remove_extra(faculty_dict[key]['title'])
         titles_dict[title] = titles_dict.get(title, 0) + 1
+
+        # Build dict of degrees
+        degrees = faculty_dict[key]['degree']
         degrees_list = degrees.split()
-        #print(degrees_list)
         for degree in degrees_list:
-            degree = format_degree(degree)
+            degree = format_degree(degree)  # Avoid duplicate keys
             if degree:
                 degrees_dict[degree] = degrees_dict.get(degree, 0) + 1
-
 
     print(degrees_dict)
     print(len(degrees_dict))
     print(titles_dict)
     print(len(titles_dict))
+
 
 # Create list of email addresses
 email_addresses = []
