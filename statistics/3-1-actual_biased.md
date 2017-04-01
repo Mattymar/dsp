@@ -10,3 +10,4 @@
 > thinkplot.PrePlot(2)
 > thinkplot.Pmfs([num_child_pmf, num_child_bias_pmf])
 > thinkplot.Config(xlabel='Number Children', ylabel='PMF')
+> ```
