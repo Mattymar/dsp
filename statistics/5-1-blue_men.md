@@ -3,15 +3,15 @@
 >> 0.342746837631
 > ```
 > import scipy.stats
->>
+>
 > mu = 178
 > sigma = 7.7
 > inch_to_cm = 2.54
->>
+>
 > heights_dist = scipy.stats.norm(loc=mu, scale=sigma)
->>
+>
 > low_height = 70 * inch_to_cm
 > high_height = 73 * inch_to_cm
->>
-> print(heights_dist.cdf(high_height) - heights_dist.cdf(low_height))  
-```
+>
+> print(heights_dist.cdf(high_height) - heights_dist.cdf(low_height))
+> ```
