@@ -1,9 +1,10 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
 
->> ```
+>>
+> ```
 > import math, thinkstats2
 > matplotlib.pyplot as plt
->   
+>
 > def RMSE(estimates, actual):
 >     sq_error = [(estimate-actual)**2 for estimate in estimates]
 >     mean_sq_error = np.mean(sq_error)
