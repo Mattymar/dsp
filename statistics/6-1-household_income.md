@@ -5,7 +5,7 @@
 > Skewness: 4.94992024443
 > Pearson's Skewness: 0.736125801914
 > Fraction households below mean: 0.660005879566872
-> If the true upper bound is higher, the data will be skewed even more to the right.  
+> If the true upper bound is higher, the data will be skewed even more to the right.
 > ```
 > import thinkstats2, Skewness, PearsonMedianSkewness
 > sample_mean = sample.mean()
