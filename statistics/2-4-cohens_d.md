@@ -1,8 +1,8 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
 >> -0.088672927072602
->> This is a greater effect size (about 3x magnitude) than pregnancy length, but still seems rather small.
->> ```
+> This is a greater effect size (about 3x magnitude) than pregnancy length, but still seems rather small.
+> ```
 > import nsfg
 > import math
 > def CohensD(group1, group2):
@@ -16,7 +16,7 @@
 >     n1, n2 = len(group1), len(group2)
 >     pooled_var = (group1.var() * n1 + group2.var() * n2) / (n1 + n2)
 >     return diff/math.sqrt(pooled_var)
->>
+>
 > preg = nsfg.ReadFemPreg()
 > live = preg[preg.outcome == 1]
 > firsts = live[live.birthord == 1]
